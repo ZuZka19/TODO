@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body{background:#263238; color:#f1f1f1; }
+    .todo-form-all{max-width:100rem; margin: 0 auto;}
+        .naglowek{font-family: Marker Felt, fantasy; font-size: 3rem;}
+        .linia{box-shadow: 3px 3px 5px #000; }
+        .todo-task{background:#455A64;padding: 5rem; box-shadow:0.5rem 1rem 2rem #171C21; font-family:Marker Felt, fantasy;}
+            .todo-part1{overflow:hidden;}
+                label{font-size:2rem; display:block; margin-bottom:0.1rem;}
+                #todoText{width:30rem; height:1rem; box-shadow:0.5rem 1rem 2rem #171C21; border:0.1rem solid #263238; margin-bottom:0.5rem; padding:1rem; font-family:Arial, sans-serif;}
+                .todo-message{width:90%; height:10rem; box-shadow:0.5rem 0.3rem 2rem #171C21; border:0.1rem solid #263238; margin-bottom:0.5rem; padding:1rem; font-family:Arial, sans-serif;}
+                .todo-add{background:#FF0048; display:block; width: 7rem; height:3rem; margin-right: 7rem; color:#f1f1f1; float:right; border: 0rem; font-family: Marker Felt, fantasy; font-size: 1.2rem; cursor: pointer; border-radius: 0.2rem;}
+                .todo-add:hover{background: #BA0035;}
+    .todo-list{padding: 3rem 5rem;font-family: Marker Felt, fantasy;}
+        .todo-list-header{display: flex; justify-content: space-between; align-items: center;}
+            .todo-list-title{font-family: Marker Felt, fantasy; font-size: 2rem; text-transform: uppercase; text-shadow: 1rem 1rem 1rem #000;}
+            .todo-search {width: 50%;}
+            #todoSearch{ box-shadow: 0.5rem 0.5rem 1rem #000;}
+        .todo-list-show{padding: 1rem;; }
+            .todo-element{font-family: Arial, sans-serif; margin-top: 1rem; padding-top: 2rem; padding-bottom: 2rem;}
+                .todo-bar-del{align-items: center;justify-content: space-between;display: flex;overflow: hidden;margin-bottom: 0.75rem;}
+                    .todo-date{margin:0;padding:1rem; font-size: 0.75rem; font-weight:normal;}
+                    .todo-delete{color: #FF0048; border:0; font-size: 1.3rem; background: none; cursor: pointer; padding: 0;}
+                        .todo-delete svg{ pointer-events: none;}
+                        .todo-delete:hover{color: #BA0035;}
+                .todo-element-text{color: #f1f1f1; font-size: 0.8rem;padding: 1rem;}
+
+
+
