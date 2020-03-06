@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styl.css"/>
-    </head>
-    <body>
-        <div class="todo-form-all" id="all">
-            <h2 class="naglowek">TODO aplikacja</h2>
-            <svg class="linia" height="5" width="100%">
-                <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(255,255,255);stroke-width:5" />
-            </svg>
-            <form class="todo-task" id="todoForm" >
-             <div class="todo-part1">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styl.css" />
+</head>
+
+<body>
+    <div class="todo-form-all" id="all">
+        <h2 class="naglowek">TODO aplikacja</h2>
+        <svg class="linia" height="5" width="100%">
+            <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(255,255,255);stroke-width:5" />
+        </svg>
+        <form class="todo-task" id="todoForm">
+            <div class="todo-part1">
                 <label class="todo-tytul" for="todoText">Podaj tytuł zadania</label></br>
                 <input type="text" name="todoText" id="todoText"></br>
                 <label class="todo-tresc" for="todoMessage">Podaj treść zadania</label></br>
                 <textarea class="todo-message" name="todoMessage" id="todoMessage"></textarea> </br></div>
-                <div class="todo-part1">
-                <button type="submit" class="todo-add" onsubmit="dodaj.dodaj()">Dodaj</button></div>
-            </form>
-            <section class="todo-list">
-                <header class="todo-list-header">
-                    <h2 class="todo-list-title">Lista zadań :</h2>
-                    <form class="todo-search" >
-                            <i class="fas fa-search"></i>
+            <div class="todo-part1">
+                <button type="submit" class="todo-add">Dodaj</button></div>
+        </form>
+        <section class="todo-list">
+            <header class="todo-list-header">
+                <h2 class="todo-list-title">Lista zadań :</h2>
+                <form class="todo-search">
+                    <i class="fas fa-search"></i>
                     <input type="search" name="todoSearch" id="todoSearch"></br>
-                    </form>
-                </header>
-                <svg class="linia" height="5" width="100%">
-                        <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(255,255,255);stroke-width:5" />
-                    </svg>
-                <div class="todo-list-show" id="todoList">
-                    <div class="todo-element">
-                        <div class="todo-bar-del">
-                            <h3 class="todo-date"></h3>
-                            <button class="todo-delete" title="Usuń">
-                                    <i class="fas fa-trash-alt"></i>
-                                <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-                            </button>
-                        </div>
-                        <div class="todo-element-text">
-                        </div>
-                </div>
-            </section>
+                </form>
+            </header>
+            <svg class="linia" height="5" width="100%">
+                <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(255,255,255);stroke-width:5" />
+            </svg>
+            <div class="todo-list-show" id="todoList">
+                <!-- <div class="todo-element">
+                    <div class="todo-bar-del">
+                        <h3 class="todo-date"></h3>
+                        <button class="todo-delete" title="Usuń">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                    <div class="todo-element-text">
+                    </div>
+                </div> -->
             </div>
-        </div>
-        <script src="js/dodaj.js"></script>
-    </body>
+        </section>
+    </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="js/dodaj.js"></script>
+    <script src="js/usun.js"></script>
+</body>
+
 </html>
